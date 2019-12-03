@@ -1,0 +1,50 @@
+<!-- <app-header></app-header> -->
+
+
+<!-- <ion-col size="4" *ngIf="Store">
+        <ion-card *ngFor="let advertiser of Store">
+            <ion-card-content>
+                <img [src]="advertiser">
+            </ion-card-content>
+        </ion-card>
+
+    </ion-col> -->
+
+
+
+<div class="slideContainer">
+    <ion-slides pager="false" [options]="slideOpts" slidesPerView="8">
+
+        <ion-slide *ngFor="let advertiser of Store">
+
+            <ion-col size="4">
+                <!-- <ion-card size="4"> -->
+
+                <!-- <img [src]="advertiser"  class=""> -->
+
+                <!-- </ion-card> -->
+                <ion-avatar>
+                    <img [src]="advertiser.logo" class="">
+
+                </ion-avatar>
+
+
+                <p class="slide_text" style="font-size:9px">{{advertiser.name}} </p>
+
+
+            </ion-col>
+        </ion-slide>
+
+        <!-- <ion-slide>
+            <h2 class="text">Slide 2ssssssssss</h2>
+        </ion-slide>
+        <ion-slide>
+            <h2 class="text">Slide 3ssssss</h2>
+        </ion-slide>
+
+        <ion-slide>
+            <h2 class="text">Slide 3sssss</h2>
+        </ion-slide> -->
+    </ion-slides>
+
+</div>

@@ -1,0 +1,242 @@
+<ion-content>
+    <app-header></app-header>
+
+    <app-store></app-store>
+    <ion-card-title>
+
+
+
+
+    </ion-card-title>
+
+
+
+
+
+
+    <ion-list class="cardList">
+
+
+
+        <!-- Skeleton screen -->
+        <div *ngIf="FeaturedCoupons.length === 0">
+
+            <div>
+
+
+                <div class="ion-padding custom-skeleton">
+                    <ion-skeleton-text animated style="width: 100%; height:100%"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 10%; line-height: 10px;"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 60%; line-height: 10px;"></ion-skeleton-text>
+
+                </div>
+
+
+                <div class="ion-padding custom-skeleton">
+                    <ion-skeleton-text animated style="width: 100%; height:100%"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 10%; line-height: 10px;"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 60%; line-height: 10px;"></ion-skeleton-text>
+
+                </div>
+
+
+                <div class="ion-padding custom-skeleton">
+                    <ion-skeleton-text animated style="width: 100%; height:100%"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 10%; line-height: 10px;"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 60%; line-height: 10px;"></ion-skeleton-text>
+
+                </div>
+
+                <div class="ion-padding custom-skeleton">
+                    <ion-skeleton-text animated style="width: 100%; height:100%"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 10%; line-height: 10px;"></ion-skeleton-text>
+                    <ion-skeleton-text animated style="width: 60%; line-height: 10px;"></ion-skeleton-text>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <div *ngIf="FeaturedCoupons && FeaturedCoupons.length > 0">
+            <ion-card *ngFor="let product of FeaturedCoupons">
+                <ion-row>
+                    <ion-col size="6">
+                        <img class="img_logo" [src]="product.logo" />
+
+                    </ion-col>
+
+                    <ion-col size="6">
+
+                        <!-- <img src="assets/Cpn.png" class="couponBorder" />
+                        <p class="Coupon">{{product.Coupon}}</p> -->
+                        <ion-row class="coupon_code">
+
+                            <ion-col size="8">
+                                <p class="Coupon">{{product.Coupon}}</p>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ion-icon name="copy" class="Coupon_icon"></ion-icon>
+                            </ion-col>
+
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+                <ion-item>
+                    <ion-row>
+                        <ion-col size="12">
+
+                            <p class="descriptio" style="font-weight: 900;">
+
+                                {{product.coupon_deal_description}}
+                            </p>
+
+                        </ion-col>
+                    </ion-row>
+
+                </ion-item>
+
+
+                <p class="discount_limitations">
+                    Applies even on discount products
+                </p>
+
+
+
+
+
+
+
+
+
+
+                <ion-row *ngIf="product.Deal == 'true'">
+                    <ion-col size="12">
+                        <ion-button shape="round" color="danger" (click)="showPopover(product.Coupon, product )">Copy Coupon </ion-button>
+                        <ion-button shape="round" color="primary" href="{{product.URL_link}}" target="_blank">Go to site</ion-button>
+
+                    </ion-col>
+                </ion-row>
+
+                <!-- <ion-row *ngIf="product.Deal == 'false'"> -->
+
+                <ion-row>
+
+                    <div class=" card_footer">
+
+
+
+                        <ion-col size="8">
+                            <ion-button color="success" href="{{product.URL_link}}" target="_blank">Shop Now </ion-button>
+
+
+
+                        </ion-col>
+
+
+                        <ion-col size="4">
+
+
+                            <ion-col size="6" class="action_svg">
+                                <ion-icon name="heart"></ion-icon>
+                            </ion-col>
+
+                            <ion-col size="6" class="action_svg">
+                                <ion-icon name="share"></ion-icon>
+                            </ion-col>
+
+
+                        </ion-col>
+
+                    </div>
+
+
+                </ion-row>
+
+
+
+
+
+            </ion-card>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ion-list>
+    <app-footer></app-footer>
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+<!-- <div *ngIf="FeaturedCoupons && FeaturedCoupons.length > 0">
+        <ion-row>
+            <ion-col size="12" *ngFor="let product of FeaturedCoupons">
+
+
+
+                <ion-card class="welcome-card">
+                    <ion-col size="12">
+
+                        <img [src]="product.logo" class="logo">
+
+                    </ion-col>
+
+                    <ion-card-header>
+
+
+                        <ion-item>
+                            <ion-card-subtitle>
+                                {{product.name}}
+                                <ion-badge color="primary">{{product.coupon_deal_description?.split(' ')[0]}}</ion-badge>
+                            </ion-card-subtitle>
+                        </ion-item>
+                    </ion-card-header>
+                    <ion-card-content>
+
+
+                        <ion-col size="6">
+                            <ion-card-subtitle>{{product.coupon_deal_description}}</ion-card-subtitle>
+                        </ion-col>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <p class="couponCode">{{product.Coupon}}</p>
+                                <ion-button shape="round" color="danger" (click)="addToCart(product)">Copy Coupon </ion-button>
+
+                            </ion-col>
+                            <ion-col size="12">
+
+                                <ion-button shape="round" color="primary" href="{{product.URL_link}}" target="_blank">Go to site</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+
+
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </div>
+
+
+</ion-item> -->

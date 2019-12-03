@@ -1,0 +1,7 @@
+{
+    "name": "CoubonKhams",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "angular"
+}

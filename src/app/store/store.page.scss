@@ -1,0 +1,117 @@
+.slideContainer {
+    margin-top: 35px;
+}
+
+.swiper-slide img {
+    width: 56px;
+    height: 25px;
+    margin-top: 19px;
+}
+
+ion-slide.md.swiper-slide.swiper-zoom-container.hydrated.swiper-slide-active {
+    width: 6px;
+}
+
+ion-slides {
+    height: 60px !important;
+}
+
+ion-avatar.md.hydrated {
+    transform: scale(0.7);
+    border: 1px solid #80808005 !important;
+    box-shadow: -3px 1px 7px #0000004d !important;
+}
+
+ion-avatar.ios.hydrated {
+    transform: scale(1);
+    border: 1px solid #80808005 !important;
+    box-shadow: -3px 1px 7px #0000004d !important;
+}
+
+p.slide_text {
+    font-size: 10px;
+    width: 65px;
+    margin-top: -9px;
+    height: 11px;
+    overflow-y: hidden;
+    font-weight: 900;
+}
+
+p.slide_text .ios {
+    font-size: 10px;
+    width: 65px;
+    margin-top: 2px;
+    height: 11px;
+    overflow-y: hidden;
+    font-weight: 900;
+    margin-left: -10px;
+}
+
+.ios.hydrated.swiper-slide {
+    width: 41px;
+    height: 13px;
+    margin-top: 19px;
+}
+
+ion-slides[_ngcontent-lff-c2] {
+    height: 60px !important;
+    margin-top: -21px;
+}
+
+ion-slides.ios.slides-ios.swiper-container.hydrated.swiper-container-horizontal {
+    margin-top: -26px;
+}
+
+.swiper-wrapper {
+    margin-top: 10px !important;
+}
+
+img {
+    width: 56px;
+    height: 19px !important;
+    margin-top: 19px;
+}
+
+// for itmes in View
+// ion-slide.ios.swiper-slide.swiper-zoom-container.hydrated.swiper-slide-prev p {
+//     font-weight: 900;
+//     margin-top: 4px;
+//     margin-left: -10px;
+//     box-shadow: -3px 1px 7px #7221dd4d;
+// }
+ion-slide.ios.swiper-slide.swiper-zoom-container.hydrated p {
+    font-weight: 900;
+    margin-top: 4px;
+    margin-left: -10px;
+}
+
+ion-avatar.ios.hydrated {
+    transform: scale(1);
+    border: 1px solid #80808005 !important;
+    box-shadow: -3px 1px 7px #0000004d !important;
+    margin-top: 25px !important;
+}
+
+ion-slides.ios.slides-ios.swiper-container.hydrated.swiper-container-horizontal {
+    margin-top: -26px;
+    height: 67px !important;
+}
+
+ion-slides.md.slides-md.swiper-container.hydrated.swiper-container-horizontal {
+    margin-top: 88px;
+    border-top: 1px solid #80808026;
+}
+
+.slideContainer {
+    margin-top: 35px;
+    margin-bottom: -79px !important;
+}
+
+ion-slides.ios.slides-ios.swiper-container.hydrated.swiper-container-horizontal {
+    margin-top: 30% !important;
+}
+
+ion-searchbar.sc-ion-searchbar-md-h.sc-ion-searchbar-md-s.md.searchbar-left-aligned.hydrated {
+    background: rgba(0, 0, 0, 0.13);
+    width: 100%;
+}
