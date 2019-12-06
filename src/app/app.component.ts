@@ -18,21 +18,32 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Coupons',
+      title: 'Favourite',
       url: '/',
-      icon: 'cash'
+      icon: 'heart'
     },
 
     {
-      title: 'Deals',
+      title: 'Register/Login',
       url: '/deals',
-      icon: 'basket'
+      icon: 'contact'
     },
 
     {
       title: 'Store',
       url: '/store',
-      icon: 'cart'
+      icon: 'basket',
+     
+    } ,
+
+ ,
+
+
+    {
+      title: 'Select Language',
+      url: '/store',
+      icon: 'barcode',
+      
     }
     ,
 

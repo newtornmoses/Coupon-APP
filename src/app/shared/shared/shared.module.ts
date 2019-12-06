@@ -8,12 +8,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [FooterPage, HeaderPage, StorePage],
+  declarations: [ HeaderPage, StorePage],
   imports: [
     CommonModule,
     IonicModule,
     
   ],
-  exports:[FooterPage, HeaderPage, StorePage]
+  // exports:[ HeaderPage, StorePage]
+  exports:[ HeaderPage, StorePage]
+
 })
 export class SharedModule { }

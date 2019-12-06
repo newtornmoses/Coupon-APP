@@ -1,0 +1,237 @@
+<ion-content>
+
+    <ion-slides pager="true" [options]="slideOpts">
+
+        <!-- select Language -->
+
+        <ion-slide>
+
+            <ion-col size="12">
+
+                <ion-row class="initial_row_1">
+                    <ion-col size="3">
+
+                    </ion-col>
+
+                    <ion-col size="6">
+                        <ion-label> Yalla Khasm</ion-label>
+                    </ion-col>
+
+                    <ion-col size="3">
+
+                    </ion-col>
+                </ion-row>
+                <div class="select_lang_title">
+                    <ion-row>
+                        <ion-col size="12">
+                            اختار اللغة
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col size="12">
+                            Select Language
+                        </ion-col>
+                    </ion-row>
+
+                </div>
+                <ion-img src="assets/svg/slant2.svg" class="slnt_img"></ion-img>
+                <div class="intro_language">
+
+                    <ion-row>
+                        <ion-col size="6">
+                            <h4 class="select_lang">ENG</h4>
+                        </ion-col>
+
+                        <ion-col size="6">
+                            <h4 class="select_lang">عربى</h4>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col size="12"></ion-col>
+                    </ion-row>
+
+
+                    <ion-row>
+                        <ion-col size="12" class="btn_apply">
+
+                            <ion-button (click)="onClick()" color="dark2" class="apply_langauge">
+                                APPLY
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </div>
+            </ion-col>
+        </ion-slide>
+
+
+        <!-- Login/Register -->
+        <ion-slide>
+
+            <ion-col size="12">
+
+                <ion-row class="initial_row">
+                    <ion-col size="3">
+
+                    </ion-col>
+
+                    <ion-col size="6">
+                        <ion-label> Yalla Khasm</ion-label>
+                    </ion-col>
+
+                    <ion-col size="3">
+                        <ion-label class="skip" (click)="onClick()">Skip</ion-label>
+                    </ion-col>
+                </ion-row>
+                <div class="Signup_login_container">
+
+                    <!-- Register section -->
+
+                    <div class="register-only" *ngIf="register">
+                        <ion-row>
+
+                            <ion-col size="12">
+                                <h4 class="register_text">Register to Yalla Khasm</h4>
+
+                            </ion-col>
+                        </ion-row>
+                        <div class="input_group">
+                            <ion-item>
+                                <ion-label position="floating">Full Name</ion-label>
+                                <ion-input type="text"></ion-input>
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label position="floating">Email</ion-label>
+
+                                <ion-input type="text"></ion-input>
+
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label position="floating">Password</ion-label>
+
+                                <ion-input type="password"></ion-input>
+
+                            </ion-item>
+
+                        </div>
+
+                        <ion-button (click)="onsignup()" color="dark" class="register">
+                            Register
+                        </ion-button>
+
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <p class="bold_text">Already have an account ? <b (click)="toggle_login()">LOGIN</b>
+                                </p>
+
+
+                            </ion-col>
+
+
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <b>OR</b>
+
+                            </ion-col>
+
+                            <ion-col size="12">
+                                <b>SIGN UP WITH</b>
+
+                            </ion-col>
+
+                            <ion-col size="12" class="google_div">
+                                <ion-icon name="logo-google" class="google"></ion-icon>
+
+                            </ion-col>
+                        </ion-row>
+                    </div>
+
+
+
+                    <!-- Login section -->
+
+                    <div class="login-only" *ngIf="login">
+                        <ion-row>
+
+                            <ion-col size="12">
+                                <h4 class="register_text">Login to Yalla Khasm</h4>
+
+                            </ion-col>
+                        </ion-row>
+                        <div class="input_group">
+
+                            <ion-item>
+                                <ion-label position="floating">Email</ion-label>
+
+                                <ion-input type="text"></ion-input>
+
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label position="floating">Password</ion-label>
+
+                                <ion-input type="password"></ion-input>
+
+                            </ion-item>
+
+                        </div>
+
+                        <ion-button (click)="onClick()" color="dark" class="register">
+                            Login
+                        </ion-button>
+
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <p class="bold_text">Don't have an account ? <b (click)="toggle_register()">Register</b>
+                                </p>
+
+
+                            </ion-col>
+
+
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <b>OR</b>
+
+                            </ion-col>
+
+                            <ion-col size="12">
+                                <b>LOGIN  WITH</b>
+
+                            </ion-col>
+
+                            <ion-col size="12" class="google_div">
+                                <ion-icon name="logo-google" class="google"></ion-icon>
+
+                            </ion-col>
+                        </ion-row>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </ion-col>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 2</h1>
+            <ion-img src="https://www.telegraph.co.uk/content/dam/news/2017/11/11/Lam4_trans_NvBQzQNjv4BqJHrDUa6dqErW26Sw56Or3qMEnM2GVw2Lj-vOsEqwR0o.jpg?imwidth=1240"></ion-img>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 3</h1>
+            <ion-img src="https://www.telegraph.co.uk/content/dam/news/2017/11/11/Lam3_trans_NvBQzQNjv4BqrWYeUU_H0zBKyvljOo6zlhU--41c5Cba04Sh5SZbNZ8.jpg?imwidth=1240"></ion-img>
+        </ion-slide>
+    </ion-slides>
+
+</ion-content>

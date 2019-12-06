@@ -355,7 +355,7 @@ ion-col.action_svg.hydrated {
 }
 
 .ion-color-success {
-    --ion-color-base: #0af0ac !important;
+    --ion-color-base: #0cd1e8 !important;
 }
 
 ion-card.sc-ion-card-md-h.sc-ion-card-md-s.md.hydrated {
@@ -400,4 +400,37 @@ img.couponBorder {
 
 ion-icon.Coupon_icon.md.hydrated {
     padding-left: 14px !important;
+}
+
+ion-card.sc-ion-card-md-h.sc-ion-card-md-s.md.hydrated {
+    padding: 14px;
+    border-radius: 33px;
+    box-shadow: -1px -2px 8px #00000038;
+    height: 397px;
+}
+
+ion-card.sc-ion-card-ios-h.sc-ion-card-ios-s.ios.hydrated {
+    padding: 14px;
+    border-radius: 33px;
+    box-shadow: -1px -2px 8px #00000038;
+    height: 397px;
+    margin-top: 57px !important;
+}
+
+ion-avatar.md.hydrated {
+    border: 1px solid #80808005 !important;
+    box-shadow: -3px 1px 7px #0000004d !important;
+    transform: scale(1) !important;
+    padding: 2px !important;
+}
+
+ion-avatar.ios.hydrated {
+    border: 1px solid #80808005 !important;
+    box-shadow: -3px 1px 7px #0000004d !important;
+    transform: scale(1) !important;
+    padding: 2px !important;
+}
+
+ion-slides {
+    height: 84px !important;
 }

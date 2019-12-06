@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { WelcomeGuard } from './Guards/welcome.guard';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    redirectTo: 'welcome',
+    pathMatch: 'full',
+    // canActivate: [WelcomeGuard]
   },
+  { path: 'welcome',
+   loadChildren: './welcome/welcome.module#WelcomePageModule' },
+
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './home/home.module#HomePageModule',
+    canActivate: [WelcomeGuard]
   },
 
   { path: 'header', loadChildren: './header/header.module#HeaderPageModule' },

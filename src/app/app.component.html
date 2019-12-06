@@ -8,17 +8,89 @@
 <ion-app>
 
     <ion-split-pane>
-        <ion-menu>
+
+        <ion-menu side="start" type="push">
             <ion-header>
-                <ion-toolbar color="light">
-                    <ion-title>Menu</ion-title>
+                <ion-toolbar class="toolbar_menu" color="medium">
+                    <ion-title>Yalla Khasm</ion-title>
                 </ion-toolbar>
             </ion-header>
             <ion-content>
-                <ion-item>
-                    <ion-img src="assets/images/img-covershot-channel-category-men@2x.jpg"></ion-img>
+                <ion-list>
+                    <ion-item class="menu_item">
+                        <ion-icon slot="start" name="home"></ion-icon>
+                        <ion-label routerLink='/home'>
+                            Home
+                        </ion-label>
+                    </ion-item>
 
+
+                    <ion-item class="menu_item">
+                        <ion-icon slot="start" name="home"></ion-icon>
+                        <ion-label routerLink='/home'>
+                            Home
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item class="menu_item">
+                        <ion-icon slot="start" name="heart"></ion-icon>
+                        <ion-label routerLink='/'>
+                            Favourite
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item class="menu_item">
+                        <ion-icon slot="start" name="contact"></ion-icon>
+                        <ion-label routerLink='/'>
+                            Register/Login
+                        </ion-label>
+                    </ion-item>
+
+                    <ion-item class="menu_item">
+
+                        <ion-icon slot="start" name="barcode"></ion-icon>
+                        <ion-label routerLink='/'>
+                            Select Language
+                        </ion-label>
+
+
+
+
+                    </ion-item>
+
+                    <div class="select_languages">
+                        <ion-col size="6">
+
+                            <ion-button (click)="switch_lang('english')" color="base">
+                                English
+                            </ion-button>
+
+                        </ion-col>
+
+                        <ion-col size="6">
+
+                            <ion-button (click)="switch_lang('english')" color="base">
+                                عربى
+                            </ion-button>
+
+                        </ion-col>
+                    </div>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+        <!-- <ion-menu>
+            <ion-header>
+                <ion-item>
+                    <ion-label>
+                        <h4 class="company_logo_name">Yalla Khasm</h4>
+                    </ion-label>
                 </ion-item>
+
+            </ion-header>
+            <ion-content>
+
+
+
 
 
                 <ion-list color="light">
@@ -32,9 +104,9 @@
                     </ion-menu-toggle>
                 </ion-list>
             </ion-content>
-            <img src="assets/cover.png" class="couponLogo">
 
-        </ion-menu>
+
+        </ion-menu> -->
         <ion-router-outlet main></ion-router-outlet>
     </ion-split-pane>
 

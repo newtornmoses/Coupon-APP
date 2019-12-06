@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { environment } from './../environments/environment.prod';
 import { IonicStorageModule } from '@ionic/storage';
 import { Clipboard } from '@ionic-native/clipboard/ngx';
+
 @NgModule({
   declarations: [AppComponent,
     PopupPage
