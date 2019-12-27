@@ -1,5 +1,4 @@
-import { Component, OnInit,  ViewChild } from '@angular/core';
-import { Storage } from '@ionic/storage';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -8,39 +7,38 @@ import { Router } from '@angular/router';
   templateUrl: './welcome.page.html',
   styleUrls: ['./welcome.page.scss'],
 })
-export class WelcomePage implements OnInit {
+export class WelcomePage {
 options
 register = true;
 login = false;
-
-  constructor(private storage: Storage, private router: Router) {}
-  slideOpts = {
-    // initialSlide: 1,
-    // speed: 400
-  };
-
-
- async  onClick() {
-    await this.storage.set('welcomee_Complete', true);
-    this.router.navigateByUrl('/home')
+isEngSelected = false;
+isArSelected = true;
+  constructor( private router: Router) { 
+    this.storage_status()
+  }
   
+    // check storage
+     storage_status() {
+      const is_set =localStorage.getItem('welcome_Complete')
+      if(is_set) {
+        this.router.navigateByUrl('/home');
+      }
+     
+    }
+
+   onClick() { 
+    this.router.navigateByUrl('/login')
   }
 
-  async finish() {
-    await this.storage.set('welcomee_Complete', true);
-    this.router.navigateByUrl('/');
-  }
+  selectLanguage(lang) {
+    if (this.isEngSelected) {
+      this.isEngSelected = !this.isEngSelected;
+      this.isArSelected = !this.isArSelected
+    } else {
 
-  toggle_login() {
-    this.login = true;
-    this.register  = false;
-  }
-
-  toggle_register() {
-    this.register = true;
-    this.login = false;
-  }
-  ngOnInit() {
+      this.isEngSelected = !this.isEngSelected;
+      this.isArSelected = !this.isArSelected
+    }
   }
 
 }

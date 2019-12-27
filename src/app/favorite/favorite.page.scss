@@ -1,0 +1,102 @@
+ion-modal#ion-overlay-1 {
+    height: 93% !important;
+    position: absolute;
+    top: 32%;
+}
+
+h4.filter_text_inner {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h4.filter.text {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+ion-button.btn_close.ion-color.ion-color-danger.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    position: sticky;
+    left: 22% !important;
+    width: 48%;
+}
+
+ion-button.btn_close.ion-color.ion-color-danger.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    position: sticky;
+    left: 22% !important;
+    width: 48%;
+}
+
+.category_section {
+    border-bottom: 1px solid #cecdcd;
+    padding: 13px;
+}
+
+ion-avatar.md.hydrated {
+    border: 1px solid #00BCD4 !important;
+    transform: scale(1.2) !important;
+}
+
+ion-avatar.ios.hydrated {
+    border: 1px solid #00BCD4 !important;
+    transform: scale(1.2) !important;
+}
+
+ion-icon.md.hydrated {
+    width: 20px !important;
+    background: whitesmoke !important;
+    height: 20px !important;
+    margin-left: 20px !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    border: 1px solid #1d1d1d29 !important;
+}
+
+ion-icon.ios.hydrated {
+    width: 20px !important;
+    background: whitesmoke !important;
+    height: 20px !important;
+    margin-left: 20px !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    border: 1px solid #1d1d1d29 !important;
+}
+
+h2 {
+    text-align: center;
+}
+
+ion-icon.remove.md.hydrated {
+    color: red;
+}
+
+ion-icon.view.md.hydrated {
+    color: #0b26bd;
+}
+
+ion-icon.remove.ios.hydrated {
+    color: red;
+}
+
+ion-icon.view.ios.hydrated {
+    color: #0b26bd;
+}
+
+.category_section {
+    margin-top: 25px;
+    border-bottom: 1px solid #cecdcd;
+    padding: 0px !important;
+    overflow-y: scroll !important;
+    max-height: 64% !important;
+}
+
+ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+    font-weight: 900;
+    text-align: center;
+}
+
+ion-label.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.hydrated {
+    font-weight: 900;
+    text-align: center;
+}

@@ -1,0 +1,167 @@
+<ion-content>
+    <div class="login_signup">
+        <!-- Login/Register -->
+
+
+        <ion-col size="12">
+
+            <ion-row class="initial_row">
+                <ion-col size="3">
+
+                </ion-col>
+
+                <ion-col size="6">
+                    <ion-label> Yalla Khasm</ion-label>
+                </ion-col>
+
+                <ion-col size="3">
+                    <ion-label class="skip" (click)="onClick()">Skip</ion-label>
+                </ion-col>
+            </ion-row>
+            <div class="Signup_login_container">
+
+                <!-- Register section -->
+
+                <div class="register-only" *ngIf="register">
+                    <ion-row>
+
+                        <ion-col size="12">
+                            <h4 class="register_text">Register to Yalla Khasm</h4>
+
+                        </ion-col>
+                    </ion-row>
+
+                    <div class="input_group">
+                        <ion-item>
+                            <ion-label position="floating">Full Name</ion-label>
+                            <ion-input type="text" [(ngModel)]="name"></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="floating">Email</ion-label>
+
+                            <ion-input type="email" [(ngModel)]="email"></ion-input>
+
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="floating">Password</ion-label>
+
+                            <ion-input type="password" [(ngModel)]="password"></ion-input>
+
+                        </ion-item>
+
+                    </div>
+
+                    <ion-button (click)="onsignup()" color="dark" class="register">
+                        Register
+                    </ion-button>
+
+
+                    <ion-row class="account_options">
+                        <ion-col size="12">
+                            <p class="bold_text">Already have an account ? <b (click)="toggle_login()">LOGIN</b>
+                            </p>
+
+
+                        </ion-col>
+
+
+
+
+                        <ion-col size="12" class="account_options">
+                            <b>OR</b>
+
+                        </ion-col>
+
+                        <ion-col size="12" class="account_options">
+                            <ion-button (click)="onClick()" color="primary" class="register">
+                                Continue as a Guest
+                            </ion-button>
+
+                        </ion-col>
+
+
+
+
+                    </ion-row>
+                </div>
+
+
+
+                <!-- Login section -->
+
+                <div class="login-only" *ngIf="login">
+                    <ion-row>
+
+                        <ion-col size="12">
+                            <h4 class="register_text">Login to Yalla Khasm</h4>
+
+                        </ion-col>
+                    </ion-row>
+
+
+                    <div class="input_group">
+
+
+                        <ion-item>
+                            <ion-label position="floating">Email</ion-label>
+
+                            <ion-input type="email" [(ngModel)]="email"></ion-input>
+
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="floating">Password</ion-label>
+
+                            <ion-input type="password" [(ngModel)]="password"></ion-input>
+
+                        </ion-item>
+
+                    </div>
+
+                    <ion-button (click)="onlogin()" color="dark" class="register">
+                        Login
+                    </ion-button>
+
+
+                    <ion-row class="account_options">
+                        <ion-col size="12">
+                            <p class="bold_text">Don't have an account ? <b (click)="toggle_register()">Register</b>
+                            </p>
+
+
+                        </ion-col>
+
+
+                    </ion-row>
+                    <ion-row class="account_options">
+                        <ion-col size="12">
+                            <b>OR</b>
+
+                        </ion-col>
+
+                        <ion-col size="12" class="account_options">
+                            <ion-button (click)="onClick()" color="primary" class="register">
+                                Continue as a Guest
+                            </ion-button>
+
+                        </ion-col>
+
+
+                    </ion-row>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </ion-col>
+
+    </div>
+
+</ion-content>

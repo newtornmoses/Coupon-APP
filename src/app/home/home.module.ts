@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
-
+import { TranslateModule } from '@ngx-translate/core';
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -13,6 +13,7 @@ import { HomePage } from './home.page';
     FormsModule,
     IonicModule,
     SharedModule,
+    TranslateModule,
     // IonTabs,
     RouterModule.forChild([
       {

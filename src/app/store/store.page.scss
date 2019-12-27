@@ -110,3 +110,16 @@ ion-slides.md.slides-md.swiper-container.hydrated.swiper-container-horizontal {
 ion-slides.ios.slides-ios.swiper-container.hydrated.swiper-container-horizontal {
     margin-top: 30% !important;
 }
+
+ion-avatar.md.hydrated {
+    border: 1px solid #00bcd487 !important;
+}
+
+ion-avatar.ios.hydrated {
+    border: 1px solid #00bcd487 !important;
+}
+
+.selected_classs ion-avatar.hydrated {
+    box-shadow: 1px 3px 9px #00BCD4 !important;
+    border: 1px solid #00BCD4 !important;
+}

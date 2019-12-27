@@ -1,5 +1,5 @@
 import { CouponService } from './../services/coupon.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {map} from 'rxjs/operators';
 import {Subscription} from 'rxjs'
 @Component({
@@ -7,30 +7,47 @@ import {Subscription} from 'rxjs'
   templateUrl: './store.page.html',
   styleUrls: ['./store.page.scss'],
 })
-export class StorePage implements OnInit {
+export class StorePage  {
 Store = [];
 storeSub: Subscription;
+isSelected = false
+store_dup = []
 
   constructor(private service: CouponService) {
  this.storeSub = this.service.$FeaturedCollectionObs.pipe(
     map(data => data.map(elem =>elem ))
-  ).subscribe(store => this.Store = store)
-
- 
- 
+  )
+  .subscribe(store => {
+    this.Store = store.sort((a, b)=> {
+    const nameA=a.category.toLowerCase(), nameB=b.category.toLowerCase();
+    return nameA.localeCompare(nameB)
+    })
+  });
    }
 
 ionViewDidLeave() {
-  console.log('store has been left');
   if(this.storeSub) {
     this.storeSub.unsubscribe()
   }
-  
-
 }
 
+select_store(store) {
+  this.store_dup =[]
+  const dup = [...this.Store]
+  dup.filter((elem, index) => {
+    if(elem.category == 'All') {
+      this.service.$selectedCollection.next( this.Store);
+      return
+    }
+    if (elem == store) {
+      this.isSelected = true;
+      this.store_dup.push(store)
+      this.service.$selectedCollection.next( this.store_dup)
+    }
+  }) 
+}
 
-// Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
+// slides options
 slideOpts = {
   initialSlide: 2,
   speed: 400,
@@ -38,10 +55,5 @@ slideOpts = {
   // spaceBetween: 10,
   centeredSlides: true
 };
-
-  ngOnInit() {
-    console.log('store', this.Store)
-    
-  }
 
 }

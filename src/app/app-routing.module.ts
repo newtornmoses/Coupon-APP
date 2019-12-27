@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { WelcomeGuard } from './Guards/welcome.guard';
 
 const routes: Routes = [
   {
@@ -10,20 +9,25 @@ const routes: Routes = [
     // canActivate: [WelcomeGuard]
   },
   { path: 'welcome',
-   loadChildren: './welcome/welcome.module#WelcomePageModule' },
+   loadChildren: './welcome/welcome.module#WelcomePageModule' ,
+  //  canActivate: [WelcomeGuard]
+  },
+  
 
   {
     path: 'home',
     loadChildren: './home/home.module#HomePageModule',
-    canActivate: [WelcomeGuard]
+    // canActivate: [WelcomeGuard]
   },
 
   { path: 'header', loadChildren: './header/header.module#HeaderPageModule' },
-  { path: 'footer', loadChildren: './footer/footer.module#FooterPageModule' },
+
   { path: 'store', loadChildren: './store/store.module#StorePageModule' },
-  { path: 'deals', loadChildren: './deals/deals.module#DealsPageModule' },
-  { path: 'coupons', loadChildren: './coupons/coupons.module#CouponsPageModule' },
-  { path: 'popup', loadChildren: './popup/popup.module#PopupPageModule' },
+ 
+  { path: 'filter', loadChildren: './filter/filter.module#filterPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'favorite', loadChildren: './favorite/favorite.module#FavoritePageModule' },
+  // { path: 'showoffer', loadChildren: './showoffer/showoffer.module#ShowofferPageModule' },
  
 
 ];

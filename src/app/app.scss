@@ -1,334 +1,750 @@
-// @font-face {
-//     font-family: 'My Custom Font';
-//     font-style: normal;
-//     font-weight: bold;
-//     src: url('../assets/fonts/myCustomFont/MyCustomFontBold.ttf');
-//   }
-.spinkit {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    z-index: 999;
-    background: #eff0f0;
-}
-
-.Logospinner {
-    position: absolute;
-    width: 150px;
-    height: 140px;
-    // background-color: #E91E63;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    margin-top: 70%;
-}
-
-h1 {
-    margin-top: 298px;
-    font-size: 33px;
-    font-family: 'Kaushan Script', cursive;
-    color: white;
-    text-shadow: 1px -2px #0000004a;
-}
-
-.spinner {
-    position: absolute;
-    width: 121px;
-    height: 130px;
-    // background-color: #E91E63;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    margin-top: 50%;
-    margin-bottom: 50%;
-    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-    animation: sk-rotateplane 1.2s infinite ease-in-out;
-    z-index: 999;
-}
-
-@-webkit-keyframes sk-rotateplane {
-    0% {
-        -webkit-transform: perspective(120px)
+    // @font-face {
+    //     font-family: 'My Custom Font';
+    //     font-style: normal;
+    //     font-weight: bold;
+    //     src: url('../assets/fonts/myCustomFont/MyCustomFontBold.ttf');
+    //   }
+    .spinkit {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        z-index: 999;
+        background: #eff0f0;
+        background: rgb(41, 48, 86);
     }
-    50% {
-        -webkit-transform: perspective(120px) rotateY(180deg)
+    
+    h1 {
+        margin-top: 298px;
+        font-size: 33px;
+        font-family: 'Kaushan Script', cursive;
+        color: white;
+        text-shadow: 1px -2px #0000004a;
     }
-    100% {
-        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    
+    .Logospinner {
+        position: absolute;
+        width: 54%;
+        height: 26%;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        margin-top: 38%;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        margin-top: 50%;
+        margin-bottom: 40%;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite cubic-bezier(0.24, 0.21, 0.38, 0.69);
+        z-index: 999;
+        transition: all 41s cubic-bezier(0, 0, 0.2, 1);
     }
-}
-
-@keyframes sk-rotateplane {
-    0% {
-        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    
+    ;
+    .spinnner {
+        position: absolute;
+        width: 121px;
+        height: 130px;
+        // background-color: #E91E63;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+        z-index: 999;
     }
-    50% {
-        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    
+    @-webkit-keyframes sk-rotateplane {
+        0% {
+            transform: perspective(120px) rotateX(60deg) rotateY(0deg) translate3d(349px, 259px, 332px);
+        }
+        20% {
+            transform: translate3d(23px, 67px, 10px);
+        }
+        40% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
+        60% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
+        80% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
+        100% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
     }
-    100% {
-        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    
+    @keyframes sk-rotateplane {
+        0% {
+            transform: perspective(120px) rotateX(60deg) rotateY(0deg) translate3d(349px, 259px, 332px);
+        }
+        20% {
+            transform: translate3d(23px, 67px, 10px);
+        }
+        40% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
+        60% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
+        80% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
+        100% {
+            transform: perspective(72px) rotateX(184deg) rotateY(201.9deg) translate3d(50px, 170px, 0px);
+        }
     }
-}
-
-ion-title {
-    font-size: 12px;
-}
-
-.couponLogo {
-    width: 97%;
-}
-
-.category_search[_ngcontent-eas-c0] {
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 131px !important;
-    z-index: 999;
-    background: white;
-    border-bottom: 1px solid #00000069;
-    height: 109px;
-}
-
-app-popup.popover-viewport.sc-ion-popover-md {
-    height: 350px;
-    overflow-y: hidden;
-}
-
-popover-viewport.sc-ion-popover-ios {
-    height: 350px;
-    overflow-y: hidden;
-}
-
-ion-card.sc-ion-card-md-h.sc-ion-card-md-s.md.hydrated {
-    padding: 15px;
-}
-
-.popover-content.sc-ion-popover-ios {
-    position: absolute !important;
-    width: 270px;
-    margin-left: 10px;
-    top: 43px !important;
-}
-
-ion-button.ion-color.ion-color-primary.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
-    font-size: 10px;
-}
-
-ion-button.ion-color.ion-color-danger.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
-    font-size: 10px;
-}
-
-.btn-warning {
-    background: #9e1d9e !important;
-    color: #fbfbfb !important;
-    height: 26px !important;
-    width: 172px !important;
-    text-decoration: none;
-    display: block !important;
-    border-radius: 20px !important;
-    padding: 5px !important;
-    margin-left: 29px !important;
-    font-size: 14px;
-}
-
-.swal2-container {
-    display: flex;
-    position: fixed;
-    z-index: 1036;
-    top: -39px !important;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: .625em;
-    overflow-x: hidden;
-    background-color: transparent !important;
-    -webkit-overflow-scrolling: touch;
-}
-
-html.plt-desktop.md.swal2-shown.swal2-height-auto {
-    background: #9C27B0;
-    height: 3px !important;
-}
-
-.swal2-container.swal2-center.swal2-fade.swal2-shown {
-    background: #9C27B0 !important;
-}
-
-button.swal2-confirm.swal2-styled {
-    border: none;
-    height: 33px;
-    font-size: 14px;
-}
-
-.swiper-zoom-container>img,
-.swiper-zoom-container>svg {
-    max-width: 88%;
-    max-height: 68%;
-    -o-object-fit: contain;
-    object-fit: contain;
-}
-
-ion-slides {
-    height: 75px !important;
-    border-bottom: 1px solid #9e9e9e57 !important;
-}
-
-ion-button.ion-color.ion-color-primary.ios.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated,
-ion-button.ion-color.ion-color-primary.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
-    width: 79%;
-    height: 29px;
-}
-
-ion-button.ion-color.ion-color-danger.ios.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated,
-ion-button.ion-color.ion-color-danger.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
-    width: 79%;
-    height: 29px;
-}
-
-ion-button.ion-color.ion-color-success.ios.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated,
-ion-button.ion-color.ion-color-success.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
-    width: 110%;
-    margin-left: 21px;
-    height: 29px;
-}
-
-img.img_logo {
-    width: 79%;
-    padding: 27px;
-}
-
-.sc-ion-card-ios-s img {
-    display: block;
-    width: 203px !important;
-}
-
-// input.searchbar-input.sc-ion-searchbar-md {
-//     border-radius: 20px;
-//     box-shadow: 0px 0px;
-//     background: #e6e7e9;
-//     height: 28px;
-//     width: 140px;
-//     margin-left: -20%;
-// }
-.sc-ion-searchbar-md-h {
-    padding-left: unset;
-    padding-right: unset;
-    -webkit-padding-start: 7px;
-    padding-inline-start: 7px;
-    -webkit-padding-end: 7px;
-    padding-inline-end: 7px;
-    background: #e6e7e9;
-    border-radius: 20px;
-    height: 28px;
-    width: 180px;
-    margin-left: -3%;
-}
-
-input.searchbar-input.sc-ion-searchbar-md {
-    background: none;
-    box-shadow: none;
-}
-
-ion-toolbar.md.ion-color.ion-color-light.hydrated {
-    position: fixed;
-}
-
-ion-icon.options.hydrated {
-    margin-top: 5px;
-    width: 73%;
-    MARGIN-LEFT: -35%;
-}
-
-h4.company_logo_name {
-    color: #2b2c2d;
-    text-align: center;
-}
-
-ion-item.ion-color.ion-color-light.item.md.in-list.ion-activatable.ion-focusable.item-label.hydrated {
-    padding: 9px;
-}
-
-ion-item.ion-color.ion-color-light.item.ios.in-list.ion-activatable.ion-focusable.item-label.hydrated {
-    padding: 9px;
-}
-
-ion-item.menu_item.item.md.in-list.ion-focusable.item-label.hydrated {
-    padding: 10px;
-}
-
-ion-item.menu_item.item.ios.in-list.ion-focusable.item-label.hydrated {
-    padding: 10px;
-}
-
-ion-title.md.title-md.hydrated {
-    text-align: center;
-}
-
-ion-title.ios.title-ios.hydrated {
-    text-align: center;
-}
-
-.select_languages {
-    margin: 10px 84px;
-    width: 311px;
-}
-
-ion-title {
-    font-size: 15px !important;
-}
-
-ion-avatar.md.hydrated {
-    border: 1px solid #80808005 !important;
-    box-shadow: -3px 1px 7px #0000004d !important;
-    transform: scale(0.9) !important;
-    padding: 2px !important;
-    margin-top: -8px !important;
-    margin-bottom: 17px !important;
-}
-
-ion-avatar.ios.hydrated {
-    border: 1px solid #80808005 !important;
-    box-shadow: -3px 1px 7px #0000004d !important;
-    transform: scale(1.3) !important;
-    padding: 2px !important;
-    margin-top: 42px !important;
-}
-
-.slideContainer {
-    margin-top: 35px;
-    margin-bottom: -79px !important;
-    height: 97px;
-}
-
-ion-slides {
-    height: 95px !important;
-}
-
-.cardList {
-    margin-top: 122px !important;
-}
-
-.swiper-wrapper {
-    margin-top: 8px !important;
-}
-
-ion-slides.ios.slides-ios.swiper-container.hydrated.swiper-container-horizontal {
-    min-height: 100px !important;
-}
-
-ion-slides.md.slides-md.swiper-container.hydrated.swiper-container-horizontal {
-    min-height: 95px !important;
-}
-
-ion-slide.md.swiper-slide.swiper-zoom-container.hydrated {
-    width: 80px;
-}
+    
+    ion-title {
+        font-size: 12px;
+    }
+    
+    .couponLogo {
+        width: 97%;
+    }
+    
+    .roll-in-left {
+        -webkit-animation: roll-in-left 1.6s cubic-bezier(0.74, -0.38, 0, 1.37) both;
+        -webkit-animation-duration: 2s;
+        animation: roll-in-left 1.6s cubic-bezier(0.74, -0.38, 0, 1.37) both;
+        -webkit-animation-duration: 2s;
+        // animation-iteration-count: infinite;
+        animation-duration: 5s;
+        width: 72%;
+        height: 51%;
+        margin-top: 9% !important;
+        animation-duration: 3s;
+        width: 72%;
+        height: 40%;
+        margin-top: 24% !important;
+    }
+    /* ----------------------------------------------
+ * Generated by Animista on 2019-12-11 18:44:42
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+    /**
+ * ----------------------------------------
+ * animation roll-in-left
+ * ----------------------------------------
+ */
+    
+    @-webkit-keyframes roll-in-left {
+        0% {
+            transform: translateX(-990px) rotate(-540deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes roll-in-left {
+        // 0% {
+        //     -webkit-transform: translateX(-800px) rotate(-540deg);
+        //     transform: translateX(-800px) rotate(-540deg);
+        //     opacity: 0;
+        // }
+        0% {
+            transform: translateX(-990px) rotate(-540deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+            opacity: 1;
+        }
+    }
+    
+    h4.App_name {
+        position: absolute;
+        width: 100%;
+        top: 55%;
+        left: 28%;
+        font-weight: 900;
+        font-family: unset;
+    }
+    
+    h4.App_name {
+        -webkit-animation: bounce-in-top 1.1s both;
+        animation: bounce-in-top 1.1s both;
+        // animation-iteration-count: infinite;
+        color: aliceblue;
+        text-shadow: -1px 1px 6px black;
+        font-size: x-large;
+    }
+    
+    h4.App_name2 {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 42%;
+        font-weight: 900;
+        font-family: unset;
+        -webkit-animation: bounce-in-left 1.1s both;
+        animation: bounce-in-left 1.1s both;
+        // animation-iteration-count: infinite;
+        color: aliceblue;
+        text-shadow: -1px 1px 6px black;
+        font-size: x-large;
+    }
+    /* ----------------------------------------------
+ * Generated by Animista on 2019-12-11 21:14:36
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+    /**
+ * ----------------------------------------
+ * animation bounce-in-left
+ * ----------------------------------------
+ */
+    
+    @-webkit-keyframes bounce-in-left {
+        0% {
+            -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        38% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            opacity: 1;
+        }
+        55% {
+            -webkit-transform: translateX(-68px);
+            transform: translateX(-68px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        72% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        81% {
+            -webkit-transform: translateX(-28px);
+            transform: translateX(-28px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        90% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+    }
+    
+    @keyframes bounce-in-left {
+        0% {
+            -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        38% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            opacity: 1;
+        }
+        55% {
+            -webkit-transform: translateX(-68px);
+            transform: translateX(-68px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        72% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        81% {
+            -webkit-transform: translateX(-28px);
+            transform: translateX(-28px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        90% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+    }
+    /* ----------------------------------------------
+ * Generated by Animista on 2019-12-11 20:35:7
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+    /**
+ * ----------------------------------------
+ * animation bounce-in-top
+ * ----------------------------------------
+ */
+    
+    @-webkit-keyframes bounce-in-top {
+        0% {
+            -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        38% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            opacity: 1;
+        }
+        55% {
+            -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        72% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        81% {
+            -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        90% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+    }
+    
+    @keyframes bounce-in-top {
+        0% {
+            -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+        38% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            opacity: 1;
+        }
+        55% {
+            -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        72% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        81% {
+            -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        90% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        95% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+    }
+    
+    .btn-warning {
+        background: #9e1d9e !important;
+        color: #fbfbfb !important;
+        height: 26px !important;
+        width: 172px !important;
+        text-decoration: none;
+        display: block !important;
+        border-radius: 20px !important;
+        padding: 5px !important;
+        margin-left: 29px !important;
+        font-size: 14px;
+    }
+    
+    .swal2-container {
+        display: flex;
+        position: fixed;
+        z-index: 1036;
+        top: -39px !important;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: .625em;
+        overflow-x: hidden;
+        background-color: transparent !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    html.plt-desktop.md.swal2-shown.swal2-height-auto {
+        background: #9C27B0;
+        height: 3px !important;
+    }
+    
+    .swal2-container.swal2-center.swal2-fade.swal2-shown {
+        background: #9C27B0 !important;
+    }
+    
+    button.swal2-confirm.swal2-styled {
+        border: none;
+        height: 33px;
+        font-size: 14px;
+    }
+    
+    .swiper-zoom-container>img,
+    .swiper-zoom-container>svg {
+        max-width: 88%;
+        max-height: 68%;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+    
+    ion-slides {
+        height: 75px !important;
+        border-bottom: 1px solid #9e9e9e57 !important;
+    }
+    
+    ion-button.ion-color.ion-color-primary.ios.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated,
+    ion-button.ion-color.ion-color-primary.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
+        width: 79%;
+        height: 29px;
+    }
+    
+    ion-button.ion-color.ion-color-danger.ios.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated,
+    ion-button.ion-color.ion-color-danger.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
+        width: 79%;
+        height: 29px;
+    }
+    
+    ion-button.ion-color.ion-color-success.ios.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated,
+    ion-button.ion-color.ion-color-success.md.button.button-small.button-round.button-solid.ion-activatable.ion-focusable.hydrated {
+        width: 110%;
+        margin-left: 21px;
+        height: 29px;
+    }
+    
+    img.img_logo {
+        width: 79%;
+        padding: 27px;
+    }
+    
+    .sc-ion-card-ios-s img {
+        display: block;
+        width: 203px !important;
+    }
+    
+    // input.searchbar-input.sc-ion-searchbar-md {
+    //     border-radius: 20px;
+    //     box-shadow: 0px 0px;
+    //     background: #e6e7e9;
+    //     height: 28px;
+    //     width: 140px;
+    //     margin-left: -20%;
+    // }
+    .sc-ion-searchbar-md-h {
+        padding-left: unset;
+        padding-right: unset;
+        -webkit-padding-start: 7px;
+        padding-inline-start: 7px;
+        -webkit-padding-end: 7px;
+        padding-inline-end: 7px;
+        background: #e6e7e9;
+        border-radius: 20px;
+        height: 28px;
+        width: 180px;
+        margin-left: -3%;
+    }
+    
+    input.searchbar-input.sc-ion-searchbar-md {
+        background: none;
+        box-shadow: none;
+    }
+    
+    ion-toolbar.md.ion-color.ion-color-light.hydrated {
+        position: fixed;
+    }
+    
+    ion-icon.options.hydrated {
+        margin-top: 5px;
+        width: 73%;
+        MARGIN-LEFT: -35%;
+    }
+    
+    h4.company_logo_name {
+        color: #2b2c2d;
+        text-align: center;
+    }
+    
+    ion-item.ion-color.ion-color-light.item.md.in-list.ion-activatable.ion-focusable.item-label.hydrated {
+        padding: 9px;
+    }
+    
+    ion-item.ion-color.ion-color-light.item.ios.in-list.ion-activatable.ion-focusable.item-label.hydrated {
+        padding: 9px;
+    }
+    
+    ion-item.menu_item.item.md.in-list.ion-focusable.item-label.hydrated {
+        padding: 10px;
+    }
+    
+    ion-item.menu_item.item.ios.in-list.ion-focusable.item-label.hydrated {
+        padding: 10px;
+    }
+    
+    ion-title.md.title-md.hydrated {
+        text-align: center;
+    }
+    
+    ion-title.ios.title-ios.hydrated {
+        text-align: center;
+    }
+    
+    .select_languages {
+        margin: 10px 84px;
+        width: 311px;
+    }
+    
+    ion-title {
+        font-size: 15px !important;
+    }
+    
+    ion-avatar.md.hydrated {
+        border: 1px solid #80808005 !important;
+        box-shadow: -3px 1px 7px #0000004d !important;
+        transform: scale(0.9) !important;
+        padding: 2px !important;
+        margin-top: -8px !important;
+        margin-bottom: 17px !important;
+    }
+    
+    ion-avatar.ios.hydrated {
+        border: 1px solid #80808005 !important;
+        box-shadow: -3px 1px 7px #0000004d !important;
+        transform: scale(1.3) !important;
+        padding: 2px !important;
+        margin-top: 42px !important;
+    }
+    
+    .slideContainer {
+        margin-top: 35px;
+        margin-bottom: -79px !important;
+        height: 97px;
+    }
+    
+    ion-slides {
+        height: 95px !important;
+    }
+    
+    .cardList {
+        margin-top: 122px !important;
+    }
+    
+    .swiper-wrapper {
+        margin-top: 8px !important;
+    }
+    
+    ion-slides.ios.slides-ios.swiper-container.hydrated.swiper-container-horizontal {
+        min-height: 100px !important;
+    }
+    
+    ion-slides.md.slides-md.swiper-container.hydrated.swiper-container-horizontal {
+        min-height: 95px !important;
+    }
+    
+    ion-slide.md.swiper-slide.swiper-zoom-container.hydrated {
+        width: 80px;
+    }
+    
+    ion-avatar.md.hydrated {
+        border: 1px solid #00BCD4 !important;
+    }
+    
+    ion-avatar.ios.hydrated {
+        border: 1px solid #00BCD4 !important;
+    }
+    
+    .selected_classs ion-avatar.hydrated {
+        box-shadow: 1px 3px 9px #00BCD4 !important;
+        border: 1px solid #00BCD4 !important;
+    }
+    
+    // ion-modal#ion-overlay-1 {
+    //     height: 93% !important;
+    //     position: absolute;
+    //     top: 32%;
+    // }
+    // app-modal.ion-page {
+    //     border-top: 1px solid #0cd1e887 !important;
+    //     border-top-left-radius: 52px !important;
+    //     border-top-right-radius: 51px;
+    // }
+    // ion-content.md.hydrated {
+    //     border-bottom: 1px solid #0000000f !important;
+    //     box-shadow: -7px -5px 20px #00000052 !important;
+    //     border-bottom-left-radius: 149px !important;
+    // }
+    ion-button.btn_filter.ion-color.ion-color-base.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+        width: 78%;
+        margin: 12% 12%;
+    }
+    
+    ion-button.btn_filter.ion-color.ion-color-base.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+        width: 78%;
+        margin: 12% 12%;
+    }
+    
+    h4.select_lang {
+        font-weight: 900;
+        color: black;
+        border: 1px solid #00000012;
+        ;
+        padding: 4px;
+        background: #f1fdff2b;
+        font-size: 12px !important;
+        height: 31px;
+        line-height: 2;
+    }
+    
+    h4.select_lang:active {
+        font-weight: 100;
+        padding: 4px;
+        background: #0b6f812b;
+        font-size: 12px !important;
+        height: 31px;
+        line-height: 2;
+    }
+    
+    h4.select_lang .myClass {
+        background: #07cbee2b;
+        color: white;
+    }
+    
+    ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated {
+        font-weight: 900;
+    }
+    
+    ion-label.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.hydrated {
+        font-weight: 900;
+    }
+    
+    ion-button.apply_langauge.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+        position: absolute;
+        top: 237px;
+        left: 0%;
+        width: 100%;
+        font-weight: 900;
+    }
+    
+    ion-button.apply_langauge.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+        position: absolute;
+        top: 237px;
+        left: 0%;
+        width: 100%;
+        font-weight: 900;
+    }
+    
+    .popover-content.sc-ion-popover-ios {
+        top: 10% !important;
+        left: 8% !important;
+        transform-origin: left top;
+        width: 88% !important;
+    }
+    
+    .popover-content.sc-ion-popover-md {
+        top: 10% !important;
+        left: 8% !important;
+        transform-origin: left top;
+        width: 88% !important;
+    }
+    
+    .alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md {
+        padding-top: 0;
+        color: #1f1d1d;
+        font-size: 13px;
+    }

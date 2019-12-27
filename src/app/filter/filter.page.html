@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-toolbar>
+        <h4 class="filter text">{{'Filter Options' | translate}}</h4>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="category_section">
+        <ion-col size="12">
+            <h4 class="filter_text_inner">{{'Categories' | translate}}</h4>
+        </ion-col>
+        <ion-chip (click)="onClick('shopping')" class="shopping">
+            <ion-label>{{'Shopping' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip (click)="onClick('travel')" class="travel">
+            <ion-label color="secondary">{{'Travel' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip color="secondary" (click)="onClick('helath')" class="helath">
+            <ion-label color="dark">{{'Health' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip (click)="onClick('beauty')" class="beauty">
+            <ion-icon></ion-icon>
+            <ion-label>{{'Beauty' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip (click)="onClick('Fashion')" class="Fashion">
+            <ion-icon></ion-icon>
+            <ion-label>{{'Fashion' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip (click)="onClick('mummies')" class="mummies">
+            <ion-icon></ion-icon>
+            <ion-label>{{'mummies' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip (click)="onClick('software_Vpn')" class="software_Vpn">
+            <ion-icon></ion-icon>
+            <ion-label>{{'software/Vpn' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip (click)="onClick('Entertainment')" class="Entertainment">
+            <ion-label color="secondary">{{'Entertainment' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip color="secondary" (click)="onClick('electronics')" class="electronics">
+            <ion-label color="dark">{{'Electronics' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip (click)="onClick('babies')" class="babies">
+            <ion-label color="dark">{{'babies' | translate}}</ion-label>
+        </ion-chip>
+        <ion-chip color="secondary" (click)="onClick('Education')" class="Education">
+            <ion-label color="dark">{{'Education' | translate}}</ion-label>
+        </ion-chip>
+    </div>
+    <div class="filter_section">
+        <ion-col size="12">
+            <div class="button_section">
+                <ion-button (click)="appy_filter()" color="base" class="btn_filter"> {{'Apply' | translate}} </ion-button>
+            </div>
+        </ion-col>
+    </div>
+    <ion-col size="12">
+        <div class="button_section">
+            <ion-button (click)="Dismiss()" color="danger" class="btn_close"> {{'close' | translate}} </ion-button>
+        </div>
+    </ion-col>
+</ion-content>

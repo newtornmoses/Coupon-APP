@@ -1,0 +1,30 @@
+<ion-card>
+    <ion-row>
+        <ion-col size="6"> <img class="img_logo" [src]="product['logo']" /> </ion-col>
+        <ion-col size="6">
+            <ion-row class="coupon_code">
+                <ion-col size="8">
+                    <p class="Coupon">{{product['Coupon']}}</p>
+                </ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+    <ion-item>
+        <ion-row>
+            <ion-col size="12">
+                <p class="descriptio" style="font-weight: 900;"> {{ product['coupon_deal_description'] | translate }} </p>
+            </ion-col>
+        </ion-row>
+    </ion-item>
+    <p class="discount_limitations"> {{ product['Discount_applies_on'] | translate }} </p>
+    <ion-row>
+        <div class=" card_footer">
+            <ion-col size="6">
+                <ion-button color="success" target="_blank" (click)="shop_NowClick(product['URL_link'], product['Coupon'])">{{'Shop Now' | translate}} </ion-button>
+            </ion-col>
+            <ion-col size="6">
+                <ion-button (click)="cancel()" color="warning"> {{'Cancel' | translate}} </ion-button>
+            </ion-col>
+        </div>
+    </ion-row>
+</ion-card>

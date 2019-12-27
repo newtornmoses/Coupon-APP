@@ -23,6 +23,6 @@ const routes: Routes = [
     SharedModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [StorePage]
+  declarations: []
 })
 export class StorePageModule {}

@@ -1,0 +1,39 @@
+ion-modal#ion-overlay-1 {
+    height: 93% !important;
+    position: absolute;
+    top: 32%;
+}
+
+h4.filter_text_inner {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h4.filter.text {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+ion-button.btn_close.ion-color.ion-color-danger.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    position: sticky;
+    left: 22% !important;
+    width: 48%;
+}
+
+ion-button.btn_close.ion-color.ion-color-danger.ios.button.button-solid.ion-activatable.ion-focusable.hydrated {
+    position: sticky;
+    left: 22% !important;
+    width: 48%;
+}
+
+.category_section {
+    border-bottom: 1px solid #cecdcd;
+    padding: 13px;
+}
+
+.isSelected {
+    background: #00BCD4;
+    color: whitesmoke;
+}
